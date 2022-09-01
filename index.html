@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
+    <script src='mockData.js'></script>
+
+</head>
+<body onload="renderJobs()">
+    <div class="row" id="jobRow"></div>
+    <br>
+    <br>
+    <div class="text">
+        <h2>Change Job Priority:</h2>
+        <br />
+        <br />
+        <div class="row">
+            <div class="col-sm-2">
+                <label for="jobs">Select a Job:</label>
+                <select name="jobs" id="jobs" onchange="getSelectedJob(this)">                
+                </select>
+            </div>
+            <div class="col-sm-1">
+                <label for="to" id="from">from priority:</label>
+            </div>
+            <div class="col-sm-2">
+                <label for="to">to priority:</label>
+                <select name="to" id="to" onchange="jobs(this)">
+                    <option value="default" selected></option>
+                
+                </select>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script src='index.js'></script>
+</html>
